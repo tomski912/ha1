@@ -95,7 +95,7 @@ class CalculatorTest {
     void testPositiveSubtraction() {
         Calculator calc = new Calculator();
 
-        calc.pressDigitKey(30);
+        calc.pressDigitKey(3);
         calc.pressDigitKey(0);
         calc.pressBinaryOperationKey("-");
         calc.pressDigitKey(2);
