@@ -82,7 +82,7 @@ public class Calculator {
         };
         screen = Double.toString(result);
         if(screen.equals("NaN")) screen = "Error";
-        if(screen.endsWith(".0")) screen = screen.substring(0, screen.length() - 2); // Bugfix für Fehlschlag 1
+        if(screen.endsWith(".0")) screen = screen.substring(0, screen.length() - 2); // Bugfix 1
         if(screen.contains(".") && screen.length() > 11) screen = screen.substring(0, 10);
 
     }
@@ -119,7 +119,7 @@ public class Calculator {
      * und das Ergebnis direkt angezeigt.
      */
     public void pressEqualsKey() {
-        if(latestOperation.isEmpty()) {   // Bugfix für Fehlschlag 2
+        if(latestOperation.isEmpty()) { // Bugfix 2
             return;
         }
 
